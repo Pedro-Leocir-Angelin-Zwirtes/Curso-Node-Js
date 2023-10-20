@@ -10,23 +10,12 @@ if(mostrarSite) {
 }*/
 
 var somaFuncao = require("./calculadora.js")
-
-function multi(a,b){
-    return a * b;
-}
-
-function subt(a,b) {
-    return a - b;
-}
-
-function div(a,b) {
-    return a / b;
-}
+var calculadora = require("./funcoes.js")
 
 console.log(somaFuncao(10,20));
-console.log(multi(10,20));
+console.log(calculadora.multi(10,20));
 
-var resultado_sub = subt(10,20);
-var resultado_div = div(10,20);
+var resultado_sub = calculadora.subt(10,20);
+var resultado_div = calculadora.div(10,20);
 console.log(resultado_sub);
 console.log(resultado_div);
